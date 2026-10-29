@@ -47,47 +47,82 @@
     </script>
     <style>
         @keyframes cursorBlink {
-            0%, 49% { opacity: 1; }
-            50%, 100% { opacity: 0; }
+
+            0%,
+            49% {
+                opacity: 1;
+            }
+
+            50%,
+            100% {
+                opacity: 0;
+            }
         }
+
         @keyframes promptNudge {
-            0%, 100% { transform: translateX(0); }
-            50% { transform: translateX(4px); }
+
+            0%,
+            100% {
+                transform: translateX(0);
+            }
+
+            50% {
+                transform: translateX(4px);
+            }
         }
+
         @keyframes dotPulse {
-            0%, 100% { transform: scale(1); opacity: 0.85; }
-            50% { transform: scale(1.2); opacity: 1; }
+
+            0%,
+            100% {
+                transform: scale(1);
+                opacity: 0.85;
+            }
+
+            50% {
+                transform: scale(1.2);
+                opacity: 1;
+            }
         }
+
         .term-cursor {
             animation: cursorBlink 0.9s steps(1) infinite;
         }
+
         .term-chevron {
             transition: transform 0.3s ease;
         }
+
         .group:hover .term-chevron {
             animation: promptNudge 1.2s ease-in-out infinite;
         }
+
         .term-dot-1 {
             fill: #ef4444;
             stroke: #ef4444;
             transform-origin: 44px 40px;
         }
+
         .term-dot-2 {
             fill: #f59e0b;
             stroke: #f59e0b;
             transform-origin: 56px 40px;
         }
+
         .term-dot-3 {
             fill: #10b981;
             stroke: #10b981;
             transform-origin: 68px 40px;
         }
+
         .group:hover .term-dot-1 {
             animation: dotPulse 1.5s ease-in-out infinite;
         }
+
         .group:hover .term-dot-2 {
             animation: dotPulse 1.5s ease-in-out infinite 0.2s;
         }
+
         .group:hover .term-dot-3 {
             animation: dotPulse 1.5s ease-in-out infinite 0.4s;
         }
@@ -107,16 +142,16 @@
     <!-- ჰედერი და ნავიგაცია -->
     <header
         class="sticky top-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80 transition-all duration-300">
-        <div
-            class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-3.5 flex items-center justify-between gap-4">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-3.5 flex items-center justify-between gap-4">
             <div class="flex-shrink-0">
                 <h1
                     class="text-xl sm:text-2xl font-extrabold tracking-tight bg-gradient-to-r from-white via-slate-100 to-indigo-300 bg-clip-text text-transparent whitespace-nowrap">
                     <a href="index.html" class="hover:opacity-90 transition-opacity">გიორგი ასანიძე</a>
                 </h1>
-                <p class="text-xs sm:text-sm font-medium text-indigo-400 flex items-center gap-1.5 mt-0.5 whitespace-nowrap">
+                <p
+                    class="text-xs sm:text-sm font-medium text-indigo-400 flex items-center gap-1.5 mt-0.5 whitespace-nowrap">
                     <span class="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-                    Fullstack დეველოპერი
+                    Software Egnineer
                 </p>
             </div>
 
@@ -260,26 +295,42 @@
                             <svg class="w-5 h-5 flex-shrink-0 transition-transform duration-300 group-hover:scale-110 group-hover:-rotate-3"
                                 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192" fill="none" aria-hidden="true">
                                 <g clip-path="url(#btn_clip1)">
-                                    <g stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="1.5" clip-path="url(#btn_clip2)">
+                                    <g stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-miterlimit="1.5" clip-path="url(#btn_clip2)">
                                         <!-- ჩარჩო -->
-                                        <path stroke-width="3" d="M39.049 27.933c-8.902.246-10.664 8.732-10.43 15.39.093 2.645-.341 77.213.5 107.244.205 7.279 2.94 15.563 10.017 16.17 5.235.449 99.756.685 111.899-.134 11.127-.749 12.678-7.873 12.887-16.389.171-6.969.861-96.509.68-104.138-.291-12.252-5.277-17.003-11.562-17.447-8.156-.576-100.826-1.062-113.991-.696" clip-rule="evenodd"/>
+                                        <path stroke-width="3"
+                                            d="M39.049 27.933c-8.902.246-10.664 8.732-10.43 15.39.093 2.645-.341 77.213.5 107.244.205 7.279 2.94 15.563 10.017 16.17 5.235.449 99.756.685 111.899-.134 11.127-.749 12.678-7.873 12.887-16.389.171-6.969.861-96.509.68-104.138-.291-12.252-5.277-17.003-11.562-17.447-8.156-.576-100.826-1.062-113.991-.696"
+                                            clip-rule="evenodd" />
                                         <!-- სათაურის ხაზი -->
-                                        <path stroke-width="2.998" d="M29.45 49.195c23.039.133 110.415.498 134.381.173"/>
+                                        <path stroke-width="2.998"
+                                            d="M29.45 49.195c23.039.133 110.415.498 134.381.173" />
                                         <!-- დეკორატიული კუთხეები -->
-                                        <path stroke-width="2.0007" d="M18.023 156.088c.132 6.032-.27 22.141 18.422 21.807m112.41-162.681c27.798.198 26.843 18.309 26.891 34.456m-.065 7.441c-.102 6.17.054 18.048.054 21.363M17.973 150.191c-.056-10.081-.106-16.989-.106-22.996"/>
+                                        <path stroke-width="2.0007"
+                                            d="M18.023 156.088c.132 6.032-.27 22.141 18.422 21.807m112.41-162.681c27.798.198 26.843 18.309 26.891 34.456m-.065 7.441c-.102 6.17.054 18.048.054 21.363M17.973 150.191c-.056-10.081-.106-16.989-.106-22.996" />
                                         <!-- შევრონი (>) -->
-                                        <path class="term-chevron" stroke-width="3" d="M80.088 106.962c-2.013-5.274-26.605-13.06-26.632-14.109-.04-1.518-.148-13.443.1-13.322 7.774 3.752 41.85 20.454 41.749 27.471-.108 7.478-29.843 21.297-41.23 27.189-.37.192-.172-11.3-.068-13.272.04-.779 22.906-8.401 26.08-13.957Z" clip-rule="evenodd"/>
+                                        <path class="term-chevron" stroke-width="3"
+                                            d="M80.088 106.962c-2.013-5.274-26.605-13.06-26.632-14.109-.04-1.518-.148-13.443.1-13.322 7.774 3.752 41.85 20.454 41.749 27.471-.108 7.478-29.843 21.297-41.23 27.189-.37.192-.172-11.3-.068-13.272.04-.779 22.906-8.401 26.08-13.957Z"
+                                            clip-rule="evenodd" />
                                         <!-- მოციმციმე კურსორი (_) -->
-                                        <path class="term-cursor" stroke-width="3" d="M141.348 133.91c.021 0-.204-9.928-.223-11.137-.001-.082-43.398.275-43.402.416-.028.64-.305 11.09.159 11.086 9.931-.08 34.801-.249 43.466-.365Z" clip-rule="evenodd"/>
+                                        <path class="term-cursor" stroke-width="3"
+                                            d="M141.348 133.91c.021 0-.204-9.928-.223-11.137-.001-.082-43.398.275-43.402.416-.028.64-.305 11.09.159 11.086 9.931-.08 34.801-.249 43.466-.365Z"
+                                            clip-rule="evenodd" />
                                         <!-- macOS წერტილები -->
-                                        <path class="term-dot-1" stroke-width="1.9966" d="M43.98 42.287c1.504 0 2.723-1.164 2.723-2.599 0-1.434-1.219-2.598-2.723-2.598s-2.722 1.163-2.722 2.598 1.219 2.598 2.722 2.598Z"/>
-                                        <path class="term-dot-2" stroke-width="1.9966" d="M56.39 42.259c1.504 0 2.723-1.163 2.723-2.598s-1.219-2.598-2.722-2.598c-1.504 0-2.723 1.163-2.723 2.598s1.219 2.598 2.723 2.598Z"/>
-                                        <path class="term-dot-3" stroke-width="1.9966" d="M68.128 42.275c1.504 0 2.723-1.163 2.723-2.598s-1.22-2.598-2.723-2.598c-1.504 0-2.723 1.163-2.723 2.598s1.22 2.598 2.723 2.598Z"/>
+                                        <path class="term-dot-1" stroke-width="1.9966"
+                                            d="M43.98 42.287c1.504 0 2.723-1.164 2.723-2.599 0-1.434-1.219-2.598-2.723-2.598s-2.722 1.163-2.722 2.598 1.219 2.598 2.722 2.598Z" />
+                                        <path class="term-dot-2" stroke-width="1.9966"
+                                            d="M56.39 42.259c1.504 0 2.723-1.163 2.723-2.598s-1.219-2.598-2.722-2.598c-1.504 0-2.723 1.163-2.723 2.598s1.219 2.598 2.723 2.598Z" />
+                                        <path class="term-dot-3" stroke-width="1.9966"
+                                            d="M68.128 42.275c1.504 0 2.723-1.163 2.723-2.598s-1.22-2.598-2.723-2.598c-1.504 0-2.723 1.163-2.723 2.598s1.22 2.598 2.723 2.598Z" />
                                     </g>
                                 </g>
                                 <defs>
-                                    <clipPath id="btn_clip1"><path fill="#fff" d="M0 0h192v192H0z"/></clipPath>
-                                    <clipPath id="btn_clip2"><path fill="#fff" d="M0 0h192v192H0z"/></clipPath>
+                                    <clipPath id="btn_clip1">
+                                        <path fill="#fff" d="M0 0h192v192H0z" />
+                                    </clipPath>
+                                    <clipPath id="btn_clip2">
+                                        <path fill="#fff" d="M0 0h192v192H0z" />
+                                    </clipPath>
                                 </defs>
                             </svg>
                             <span>ჩემი პროექტები</span>
